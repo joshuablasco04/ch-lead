@@ -1,5 +1,5 @@
 function fetchAllMessages() {
-    fetch('http://localhost:3000/inbox/readAllMessage')
+    fetch('http://ch-lead.onrender.com/inbox/readAllMessage')
     .then(res => {
         if (res.ok) {
             return res.json();
@@ -41,7 +41,7 @@ function deleteMessage(id) {
     const confirmationDialog = confirm('Are you sure you want to delete this user?');
 
     if(confirmationDialog){
-        fetch(`http://localhost:3000/inbox/deleteMessage/${id}`,{
+        fetch(`http://ch-lead.onrender.com/inbox/deleteMessage/${id}`,{
             method: 'DELETE',
        }).then(res => {
             if (res.ok) {

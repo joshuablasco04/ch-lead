@@ -1,5 +1,5 @@
 function fetchAllUsers() {
-    fetch('http://localhost:3000/adminUsers/readAllAdmin')
+    fetch('http://ch-lead.onrender.com/adminUsers/readAllAdmin')
     .then(res => {
         if (res.ok) {
             return res.json();
@@ -60,7 +60,7 @@ function showFields(){
         'none';
 }
 function getUserById(id) {
-    return fetch(`http://localhost:3000/adminUsers/readAdminById/${id}`)
+    return fetch(`http://ch-lead.onrender.com/adminUsers/readAdminById/${id}`)
         .then (res => {
             if (res.ok) {
                 return res.json();
@@ -134,7 +134,7 @@ function updateUser(id){
             return;
         }
         console.log(fieldToBeUpdated);
-        fetch(`http://localhost:3000/adminUsers/updateAdmin/${id}`, {
+        fetch(`http://ch-lead.onrender.com/adminUsers/updateAdmin/${id}`, {
             method: 'PUT',
             headers: {
                 'Content-type': 'application/json'
@@ -167,7 +167,7 @@ function deleteUser(id) {
     const confirmationDialog = confirm('Are you sure you want to delete this user?');
 
     if(confirmationDialog){
-        fetch(`http://localhost:3000/adminUsers/deleteAdmin/${id}`,{
+        fetch(`http://ch-lead.onrender.com/adminUsers/deleteAdmin/${id}`,{
             method: 'DELETE',
        }).then(res => {
             if (res.ok) {
@@ -216,7 +216,7 @@ function addUser() {
         }
     }
 
-    fetch('http://localhost:3000/adminUsers//createAdmin', {
+    fetch('http://ch-lead.onrender.com/adminUsers//createAdmin', {
         method: 'POST',
         headers: {
             'Content-type': 'application/json'

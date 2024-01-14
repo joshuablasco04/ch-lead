@@ -1,7 +1,7 @@
 
 function displayHistory() {
     const tableBody = document.querySelector('tbody');
-    fetch('http://localhost:3000/customers/getHistory')
+    fetch('http://ch-lead.onrender.com/customers/getHistory')
     .then(res => res.json())
     .then(productData => {    
         console.log(productData)        

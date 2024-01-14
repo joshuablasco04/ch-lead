@@ -1,5 +1,5 @@
 function fetchAllUsers() {
-    fetch('http://localhost:3000/adminUsers/readAllAdmin')
+    fetch('http://ch-lead.onrender.com/adminUsers/readAllAdmin')
     .then(res => {
         if (res.ok) {
             return res.json();
@@ -67,7 +67,7 @@ function addUser() {
         }
     }
 
-    fetch('http://localhost:3000/adminUsers//createAdmin', {
+    fetch('http://ch-lead.onrender.com/adminUsers//createAdmin', {
         method: 'POST',
         headers: {
             'Content-type': 'application/json'

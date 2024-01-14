@@ -7,7 +7,7 @@ const container = document.getElementById('products-container');
 const checkoutCard = document.querySelector('.checkoutCard')
 
 function fetchAllProducts() {
-    fetch('http://localhost:3000/customers/getAllProducts')
+    fetch('http://ch-lead.onrender.com/customers/getAllProducts')
         .then(res => res.json())
         .then(productData => {
             populateProduct(productData);
@@ -98,7 +98,7 @@ function populateCart(){
     const total = document.getElementById('total-value');
 
     listElement.innerHTML = "";
-    fetch('http://localhost:3000/customers/getCart')
+    fetch('http://ch-lead.onrender.com/customers/getCart')
     .then(res => res.json())
     .then(data => {
         data.cart.find(value => {
@@ -153,14 +153,14 @@ function populateCart(){
 
 function addToCart(productKey) {  
     console.log(productKey)
-    fetch('http://localhost:3000/customers/getAllProducts')
+    fetch('http://ch-lead.onrender.com/customers/getAllProducts')
         .then(res => res.json())
         .then(productData => {
            
             productData.products.forEach((value) => {
                 if (productKey == value._id) {
                                      
-                    fetch(`http://localhost:3000/customers/addToCart/${value._id}`, {
+                    fetch(`http://ch-lead.onrender.com/customers/addToCart/${value._id}`, {
                             method: 'POST',
                             headers: {
                                 'Content-type': 'application/json'
@@ -215,7 +215,7 @@ function add(key) {
     itemTotalAmount.innerText = parseFloat(itemQuantity.innerText) * parseFloat(itemAmount.innerText);
     total.innerText = parseFloat(total.innerText) + parseFloat(itemAmount.innerText);
 
-    fetch(`http://localhost:3000/customers/getCart/${key}`, {
+    fetch(`http://ch-lead.onrender.com/customers/getCart/${key}`, {
             method: 'PUT',
             headers: {
                 'Content-type': 'application/json'
@@ -258,7 +258,7 @@ function minus(key) {
         }
     }
     
-    fetch(`http://localhost:3000/customers/getCart/${key}`, {
+    fetch(`http://ch-lead.onrender.com/customers/getCart/${key}`, {
             method: 'DELETE',
             headers: {
                 'Content-type': 'application/json'

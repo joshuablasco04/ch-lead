@@ -4,7 +4,7 @@ const iconClose = document.querySelector('.icon-close');
 
 
 // function fetchMessages() {
-//   fetch('http://localhost:3000/inbox/readAllMessage')
+//   fetch('http://ch-lead.onrender.com/inbox/readAllMessage')
 //     .then((res) => {
 //       if (!res.ok) {
 //         throw new Error('Network response was not ok');
@@ -45,7 +45,7 @@ function addNewMessage() {
     }
   }
 
-  fetch('http://localhost:3000/inbox/addMessageInbox', {
+  fetch('http://ch-lead.onrender.com/inbox/addMessageInbox', {
     method: 'POST',
     headers: {
       'Content-type': 'application/json',

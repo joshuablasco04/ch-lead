@@ -30,7 +30,7 @@ iconClose.addEventListener('click', () => {
 //   const username = usernameField.value
 //   const password = passwordField.value
 
-//   fetch('http://localhost:3000/users/login', {
+//   fetch('http://ch-lead.onrender.com/users/login', {
 //     method:'POST',
 //     headers: {
 //       'Content-type': 'application/json'
@@ -56,7 +56,7 @@ function validate() {
   const username = usernameField
   const password = passwordField;
   
-  fetch('http://localhost:3000/users/read')
+  fetch('http://ch-lead.onrender.com/users/read')
   
   .then(res => res.json())
   .then(res => {
@@ -70,7 +70,7 @@ function validate() {
       alert("Login successfully");
       }
   })
-  fetch('http://localhost:3000/users/loginData', {
+  fetch('http://ch-lead.onrender.com/users/loginData', {
     method: 'POST',
     headers: {
         'Content-type': 'application/json'
@@ -82,7 +82,7 @@ function validate() {
   })
   
   .then(()=> {
-    fetch('http://localhost:3000/adminUsers/readAllAdmin')
+    fetch('http://ch-lead.onrender.com/adminUsers/readAllAdmin')
     .then(res => res.json())
     .then(res => {
       if(!usernameField){
@@ -117,7 +117,7 @@ function validate() {
 
 
 // function fetchMessages(){
-//   fetch('http://localhost:3000/inbox/readAllMessage')
+//   fetch('http://ch-lead.onrender.com/inbox/readAllMessage')
 //   .then(res => res.json())
 //   .then(messageData => {
 //     saveMessage(messageData);
@@ -161,7 +161,7 @@ function validate() {
 //     }
 //   }
 
-//   fetch('http://localhost:3000/inbox/addMessageInbox', {
+//   fetch('http://ch-lead.onrender.com/inbox/addMessageInbox', {
 //     method:'POST',
 //     headers: {
 //       'Content-type': 'application/json'
@@ -189,7 +189,7 @@ function validate() {
 // fetchMessages();
 
 function fetchMessages() {
-  fetch('http://localhost:3000/inbox/readAllMessage')
+  fetch('http://ch-lead.onrender.com/inbox/readAllMessage')
     .then((res) => {
       if (!res.ok) {
         throw new Error('Network response was not ok');
@@ -229,7 +229,7 @@ function addNewMessage() {
     }
   }
 
-  fetch('http://localhost:3000/inbox/addMessageInbox', {
+  fetch('http://ch-lead.onrender.com/inbox/addMessageInbox', {
     method: 'POST',
     headers: {
       'Content-type': 'application/json',

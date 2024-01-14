@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Fetch sales data from backend
-  fetch('http://localhost:3000/sales/salesData')
+  fetch('http://ch-lead.onrender.com/sales/salesData')
       .then(response => response.json())
       .then(data => {
         // console.log('Fetched data:', data);

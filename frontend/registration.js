@@ -1,5 +1,5 @@
 function fetchAllUsers(){
-  fetch('http://localhost:3000/users/read')
+  fetch('http://ch-lead.onrender.com/users/read')
   .then(res => res.json())
   .then(userData => {
     saveUser(userData);
@@ -54,7 +54,7 @@ function registerUser() {
     }
   }
 
-  fetch('http://localhost:3000/users/create', {
+  fetch('http://ch-lead.onrender.com/users/create', {
     method:'POST',
     headers: {
       'Content-type': 'application/json'
