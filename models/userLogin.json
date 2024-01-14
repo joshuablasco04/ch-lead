@@ -1,0 +1,16 @@
+{
+  "user": [
+    {
+      "id": 15,
+      "firstName": "joshua",
+      "middleName": "",
+      "lastName": "blasco",
+      "gender": "male",
+      "birthDate": "1999-03-03",
+      "address": "San Juan City",
+      "email": "joshua@email.com",
+      "username": "joshua",
+      "password": "joshua123"
+    }
+  ]
+}

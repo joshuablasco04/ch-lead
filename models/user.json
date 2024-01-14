@@ -1,0 +1,184 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "elreen",
+      "middleName": "imperial",
+      "lastName": "matawaran",
+      "gender": "female",
+      "birthDate": "June 21,1989",
+      "address": "tacloban city",
+      "email": "elreen@gmail.com",
+      "username": "elreen1",
+      "password": "elreen123"
+    },
+    {
+      "id": 2,
+      "firstName": "mae",
+      "middleName": "imperial",
+      "lastName": "sumampong",
+      "gender": "female",
+      "birthDate": "March 17,1994",
+      "address": "tacloban city",
+      "email": "mae@gmail.com",
+      "username": "mae1",
+      "password": "mae123"
+    },
+    {
+      "id": 3,
+      "firstName": "hazel",
+      "middleName": "peligro",
+      "lastName": "naval",
+      "gender": "female",
+      "birthDate": "November 5,1988",
+      "address": "tacloban city",
+      "email": "hazel@gmail.com",
+      "username": "hazel1",
+      "password": "hazel123"
+    },
+    {
+      "id": 4,
+      "firstName": "kim",
+      "middleName": "",
+      "lastName": "sumampong",
+      "gender": "",
+      "birthDate": "January 23, 1996",
+      "address": "tacloban city",
+      "email": "kim2@gmail.com",
+      "username": "kim2",
+      "password": "kim123"
+    },
+    {
+      "id": 5,
+      "firstName": "joyce",
+      "lastName": "tan",
+      "email": "joyce@email.com",
+      "username": "joyce",
+      "password": "joyce123"
+    },
+    {
+      "id": 6,
+      "firstName": "dfasfd",
+      "lastName": "dfaf",
+      "email": "asd@email.com",
+      "username": "asd",
+      "password": "asd123"
+    },
+    {
+      "id": 7,
+      "firstName": "elreen",
+      "lastName": "imperial",
+      "email": "elreen234@email.com",
+      "username": "elreen234",
+      "password": "elreen234"
+    },
+    {
+      "id": 8,
+      "firstName": "dindin",
+      "middleName": "",
+      "lastName": "servi",
+      "gender": "female",
+      "birthDate": "2004-03-03",
+      "address": "hsfsaa",
+      "email": "din123@mail.com",
+      "username": "din123",
+      "password": "din123"
+    },
+    {
+      "id": 9,
+      "firstName": "jane",
+      "middleName": "",
+      "lastName": "doe",
+      "gender": "male",
+      "birthDate": "",
+      "address": "",
+      "email": "jane123@email.com",
+      "username": "jane1",
+      "password": "jane123"
+    },
+    {
+      "id": 10,
+      "firstName": "dsada",
+      "middleName": "",
+      "lastName": "dasda",
+      "gender": "male",
+      "birthDate": "",
+      "address": "dad",
+      "email": "dsada@fdsfs",
+      "username": "dad",
+      "password": "dadad"
+    },
+    {
+      "id": 11,
+      "firstName": "dsadas",
+      "middleName": "",
+      "lastName": "dsada",
+      "gender": "male",
+      "birthDate": "",
+      "address": "dasdadsdad",
+      "email": "dasda@fdfsdasdad",
+      "username": "dada",
+      "password": "sadad"
+    },
+    {
+      "id": 12,
+      "firstName": "dsadadadasd",
+      "middleName": "hhkjh",
+      "lastName": "hkjhjk",
+      "gender": "male",
+      "birthDate": "",
+      "address": "",
+      "email": "hjkh@kjklj",
+      "username": "jhj",
+      "password": "kkjhjk"
+    },
+    {
+      "id": 13,
+      "firstName": "julie",
+      "middleName": "",
+      "lastName": "kiunsala",
+      "gender": "female",
+      "birthDate": "2000-12-03",
+      "address": "cebu city",
+      "email": "julie@email.com",
+      "username": "julie1",
+      "password": "julie123"
+    },
+    {
+      "id": 14,
+      "firstName": "joyce",
+      "middleName": "",
+      "lastName": "fsdd",
+      "gender": "female",
+      "birthDate": "2001-02-02",
+      "address": "",
+      "email": "joy@email.com",
+      "username": "joy",
+      "password": "joy123"
+    },
+    {
+      "id": 15,
+      "firstName": "joshua",
+      "middleName": "",
+      "lastName": "blasco",
+      "gender": "male",
+      "birthDate": "1999-03-03",
+      "address": "",
+      "email": "joshua@email.com",
+      "username": "joshua",
+      "password": "joshua123"
+    },
+    {
+      "id": 16,
+      "firstName": "asdf",
+      "middleName": "",
+      "lastName": "asdf",
+      "gender": "female",
+      "birthDate": "1987-07-09",
+      "address": "asdf",
+      "email": "asdf@email.com",
+      "username": "asdf",
+      "password": "asdf123"
+    }
+  ]
+}

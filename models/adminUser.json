@@ -1,0 +1,28 @@
+{
+  "adminUsers": [
+    {
+      "id": 1,
+      "employeeId": 123456,
+      "name": "julie",
+      "designation": "manager",
+      "username": "julie123",
+      "password": "123456"
+    },
+    {
+      "id": 2,
+      "employeeId": "08967",
+      "name": "elreen",
+      "designation": "manager",
+      "username": "elreen123",
+      "password": "elreen123"
+    },
+    {
+      "id": 3,
+      "employeeId": "0123456",
+      "name": "joshua",
+      "designation": "CEO",
+      "username": "joshua04",
+      "password": "joshua04"
+    }
+  ]
+}

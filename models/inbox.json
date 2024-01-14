@@ -1,0 +1,18 @@
+{
+  "messages": [
+    {
+      "id": 1,
+      "name": "jelo",
+      "email": "jelo@email.com",
+      "messageType": "Concern",
+      "messageBody": "Hello I have concern"
+    },
+    {
+      "id": 2,
+      "name": "diana",
+      "email": "diana@email.com",
+      "messageType": "concern",
+      "messageBody": "Hello I have concern too"
+    }
+  ]
+}
