@@ -1,0 +1,145 @@
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--secondary-color-light);
+    background-size: cover; 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-image: linear-gradient(
+        to right, 
+        rgba(0,0,0,0.8),
+        rgba(0,0,0,0.2)
+    ),
+    url("Images/homepage-bg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav_links .dropdown {
+    position: relative;
+}
+
+.nav_links .dropdown .dropdown-toggle {
+    position: relative;
+    color: var(--white);
+    padding: 3px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.nav_links .dropdown .dropdown-toggle:hover {
+    color: var(--primary-color);
+}
+
+.nav_links .dropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--white);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav_links .dropdown .dropdown-menu li {
+    margin: 0;
+    padding: 0;
+}
+
+.nav_links .dropdown:hover .dropdown-menu {
+    display: block;
+    border-radius: 5px;
+}
+
+.nav_links .dropdown .dropdown-menu li a {
+    display: block;
+    padding: 10px 20px;
+    color: var(--black);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.nav_links .dropdown .dropdown-menu li a:hover{
+    color: var(--primary-color);
+    border: none;
+    --bs-dropdown-link-active-bg: var(--white);
+}
+
+.container {
+    width: 100%; 
+    margin: 0 auto;
+    margin-top: 50px;
+}
+h1 {
+    text-align: center;
+}
+
+#user-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#user-table th,
+#user-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    width: 220px;
+}
+
+#user-table th{
+    color: var(--white);
+    text-align: center;
+}
+#user-table div{
+    display: flex;
+    align-items: center;
+}
+.add-form {
+    display: none;
+    margin-bottom: 20px;
+}
+.add-form label,
+.add-form input {
+    margin-bottom: 10px;
+}
+button.actions-btn {
+    cursor: pointer;
+    margin-right: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.modal-dialog{
+    color: var(--black);
+}
+
+.container.newUser{
+    width: 60%;
+    margin: 30px auto;
+    padding: 10px 50px 30px 140px;
+}
+.container.newUser .form-row{
+    display: flex;
+    justify-content: space-between;
+
+}
+#MessageContent{
+    word-wrap: break-word;
+}
+h2{
+    text-align: center;
+}

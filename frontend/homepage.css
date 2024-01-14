@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+body {
+  background-image: linear-gradient(
+    to right, 
+    rgba(0,0,0,0.6),
+    rgba(0,0,0,0.5)
+),
+url(Images/homepage-bg.jpg);
+background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+
+.btn.btn-outline-light {
+  background-color: transparent;
+  border: none;
+  color: white;
+  margin-left: 20px;
+  width: 100px;
+  height: 27px;
+  padding: 0px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btnLogin-popup {
+  width: 50px;
+  height: 40px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  
+ }
+
+.btnLogin-popup:hover {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--second-primary-color);
+}
+
+.form-control {
+  width: 350px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  height: 70px;
+}
+
+.wrapper {
+  background-color: var(--secondary-color-light);
+  position:absolute;
+  width: 400px;
+  height: 440px;
+  border: 2px solid var(--second-primary-color);
+  border-radius: 20px;
+  top: 20%;
+  left: 35.33%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transform:scale(0);
+  transition: transform .5 ease, height .2s ease;
+}
+
+
+.wrapper.active-popup {
+  transform:scale(1);
+}
+
+.wrapper.active {
+  height: 520px;
+}
+
+.wrapper .icon-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45px;
+  height: 45px;
+  background: var(--second-primary-color);
+  color: white;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 20px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.wrapper .form-box {
+  width: 100%;
+  padding: 30px;
+  background-color: var(--secondary-color-light);
+}
+
+.wrapper .form-box.login {
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.wrapper.active .form-box.login {
+  transition: none;
+  transform:translateX(-400px);
+}
+
+
+ .wrapper .form-box.register {
+  position: absolute;
+  transition: none;
+  transform: translateX(400px);
+}  
+
+.wrapper.active .form-box.register {
+  transition: transform .18s ease;
+  transform: translateX(0);
+}
+
+.form-box h2 {
+  color: white;
+  font-size: 2em;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border-bottom: 2px solid var(--second-primary-color);
+  margin: 30px 0;
+}
+
+.input-box label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 1em;
+  color: var(--white);
+  font-weight: 500;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+  top: -5px;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  color: var(--white);
+  font-weight: bold;
+  padding: 0 35px 0 5px;
+}
+
+.input-box .icon {
+  position: absolute;
+  right: 8px;
+  font-size: 1.2em;
+  color: var(--second-primary-color);
+  line-height: 57px;
+}
+
+.remember {
+  font-size: 15px;
+  color: var(--white);
+  font-weight: 500;
+  margin: -15px 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.remember label input {
+  accent-color: var(--white);
+  margin-right: 3px;
+}
+
+.remember a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.remember a:hover {
+  text-decoration: underline;
+}
+
+.btn-login-register {
+  width: 100%;
+  height: 45px;
+  background-color: var(--second-primary-color);
+  border: none;
+  outline:none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+}
+
+
+.login-register {
+  font-size: 15px;
+  color: var(--white);
+  text-align: center;
+  font-weight: 500;
+  margin: 25px 0 10px;
+}
+
+.login-register p a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-register p a:hover {
+  text-decoration: underline;
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+}
+
+
+/* body */
+ h1 {
+  color: white;
+  font-weight: bold;
+  margin: 0px;
+  padding: 0px;
+  font-size: 30px;
+ }
+
+ .main-product-div{
+  display: flex;
+  margin-top: 0px;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .cards {
+  width: 25%;
+  background-color: var(--secondary-color-light);
+  height: 470px;
+  margin: 10px 45px;
+  border-radius: 5px;
+ }
+
+ .cards:hover {
+  box-shadow: 2px 2px 10px var(--second-primary-color);
+ }
+
+ .image img {
+    size:100%;
+    height: 280px;
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+    
+ }
+
+ .product-name {
+  text-align: center;
+  margin: 13px 20px;
+ }
+
+ .product-description{
+  text-align: center;
+  justify-content: center;
+  font-size: 11px;
+ }
+
+ .view-products {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white; 
+  padding: 10px;
+  border-radius: 5px;
+ }
+
+ .view-products:hover {
+  border: 1px solid var(--second-primary-color);
+  color: var( --primary-color-light);
+  cursor: pointer;
+ }
+
+ .view-products a:hover {
+  color: var( --primary-color-light);
+ }
+
+
+/* end body */
+
+.career-contact {
+  display: flex;
+  height: 100vh;
+}
+
+#about-us {
+  display: flex;
+  height: 100vh;
+}
+
+.message {
+  padding: 25px 35px;
+  border: 1px solid black;
+  width: 500px;
+  height: 520px;
+  background-color: var(--secondary-color-light);
+  border-radius: 20px;
+  margin: 50px 120px;
+}
+
+.message h1 {
+  text-align: center;
+}
+
+.message input, .message select {
+  padding: 10px;
+  margin: 10px;
+  width: 405px;
+}
+
+#messageBody {
+  padding: 15px;
+  margin: 10px;
+  width: 405px;
+}
+
+.btn-send {
+  float: right;
+  margin-right: 15px;
+  border-radius: 5px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  width: 150px;
+  padding: 10px;
+}
+
+.btn-send:hover{
+  border: 1px solid var(--second-primary-color);
+  color: var( --primary-color-light);
+  cursor: pointer;
+}
+
+
+#careers {
+  display: block;
+  justify-content: left;
+  text-align: center;
+  background-color: var(--secondary-color-light);
+  width: 500px;
+  height: 520px;
+  margin: 50px;
+  border-radius: 20px;
+}
+
+.sns {
+  text-align: left;
+  border: 1px solid black;
+  font-size: 20px;
+  margin: 110px 50px;
+}
+
+.career {
+  border: 1px solid black;
+  margin: 0px 50px;
+  font-size: 20px;
+}
+
+
