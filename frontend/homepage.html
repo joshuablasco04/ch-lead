@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+        <link href="css/bootstrap.min.css" rel="stylesheet" >
+        <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">    
+        <link rel="stylesheet" href="homepage.css">
+        <link rel="stylesheet" href="Admin-global.css">
+        <title>Homepage</title>
+</head>
+<body>
+  <header>
+    <nav>
+        <div class="nav_logo"><a ><img src="Images/logo.webp" alt="" id="home">CHLEAD INDUSTRIAL SUPPLY</a></div>
+        <ul class="nav_links" id="nav-links">
+            <li class="link"><a href="">Home</a></li>
+            <li class="link"><a href="Company-profile.html">About Us</a></li>
+            <li class="link"><a href="#contact-us">Contact Us</a></li>
+            <li class="link"><a href="#careers">Careers</a></li>
+            <li class="link"><a href="registration.html">Register</a></li>
+            <li class="link"><button class="btnLogin-popup">Login</button></li>
+
+        </ul>
+        <div class="nav_menu_btn" id="menu-btn">
+            <span><i class="ri-menu-line"></i></span>
+        </div>
+    </nav>
+   
+  </header>
+
+    <div class="blur-background"></div>
+  
+       <!-- login form -->
+       <div class="wrapper">
+        <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+        <div class="form-box login">
+          <h2>Login</h2>
+          <form action="#">
+            <div class="input-box">
+              <span class="icon"><ion-icon name="person"></ion-icon></span>
+              <input type="text" required id="username">
+              <label>Username</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+              <input type="password" required id="password">
+              <label>Password</label>
+            </div>
+            <div class="remember">
+              <label><input type="checkbox">Remember me</label>
+              <a href="#">Forgot Password?</a>
+            </div>
+            <button type="submit" class="btn-login-register" id="submit" onclick="validate()">Login</button>
+            <div class="login-register">
+              <p>Don't have an account? <a href="registration.html" class="register-link">Register</a></p>
+            </div>
+          </form>
+        </div>
+    
+        <div class="form-box register">
+          <h2>Registration</h2>
+          <form action="#">
+            <div class="input-box">
+              <span class="icon"><ion-icon name="person"></ion-icon></span>
+              <input type="text" required>
+              <label>Username</label>
+            </div>
+            <div>
+              <div class="input-box">
+                <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                <input type="email" required>
+                <label>Email</label>
+              </div>
+              <div class="input-box">
+                <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                <input type="password" required>
+                <label>Password</label>
+              </div>
+            </div>
+            
+            <div class="remember">
+              <label><input type="checkbox">I agree to the terms & conditions</label>
+            </div>
+            <button type="submit" class="btn-login-register"><a class ="register-new" href=/registration.html>Register</a></button>
+            <div class="login-register">
+              <p>Already have an account? <a href="#" class="login-link">Sign-In</a></p>
+            </div>
+          </form>
+        </div> 
+      </div> 
+
+<!-- products -->
+      <div class="main-product-div">
+        <!-- product 1 -->
+          <div class="cards">
+              <div class="image">
+                <img src = "/Images/valve.png" class="product-img">
+              </div>
+
+              <div class="product-name">
+                <h1>Valves</h1>
+
+              </div>
+
+              <div class="product-description">
+
+                <p>Mechanical devices that control the flow and pressure of liquids, gases, and slurries within a system.</p>
+
+                <button class="view-products"><a href = "customer.html#valves">View Products</a></button>
+              </div>
+            </div>
+          <!-- product 2 -->
+            <div class="cards">
+              <div class="image">
+                <img src = "/Images/electrical-supplies.png" class="product-img">
+              </div>
+
+              <div class="product-name">
+                <h1>Electrical Supplies</h1>
+
+              </div>
+
+              <div class="product-description">
+
+                <p>conductors used to transmit electric energy and their necessary supporting or containing structures.</p>
+
+                <button class="view-products">View Products</a></button>
+              </div>
+            </div>
+
+          <!-- product 3 -->
+
+            <div class="cards">
+              <div class="image">
+                <img src = "/Images/industrial-supplies.png" class="product-img">
+              </div>
+
+              <div class="product-name">
+                <h1>Industrial Supplies</h1>
+
+              </div>
+
+              <div class="product-description">
+
+                <p>Components, spare parts, accessories and <br>equipments</p>
+
+                <button class="view-products">View Products</button>
+              </div>
+            </div>
+      </div>
+
+               
+<!-- products end -->
+
+  <br><br>
+
+  <div class="row">
+    <div class="career-contact">
+      <!-- <div class="col-6 col-contact" id="contact-us">
+        <form action="" class="message">
+          <h1>Connect with us</h1>
+          <input type="text" id="messageName" placeholder="Your Name"><br>
+          <input type="email" id="messageEmail" placeholder="Your Email"><br>
+          <select placeholder="select" id="messageType">
+            <option value="select">--Select Options--</option>
+            <option value="concern">Concern</option>
+            <option value="qoute">Get Qoute</option>
+            <option value="others">Others</option>
+          </select><br>
+          <textarea id="text-area messageBody" name="freeform" rows="5" cols="50" >Your Message Details</textarea>
+          <button class="btn-send" type= "button" id="sendBtn" onclick="addNewMessage()">Send Message</button>
+        </form>
+      </div> -->
+      <div class="col-6 col-contact" id="contact-us">
+        <form action="" class="message">
+          <h1>Connect with us</h1>
+          <input type="text" id="messageName" placeholder="Your Name"><br>
+          <input type="email" id="messageEmail" placeholder="Your Email"><br>
+          <select id="messageType">
+            <option value="select">--Select Options--</option>
+            <option value="concern">Concern</option>
+            <option value="quote">Get Quote</option>
+            <option value="others">Others</option>
+          </select><br>
+          <textarea id="messageBody" name="freeform" rows="5" cols="50">Your Message Details</textarea>
+          <button class="btn-send" type="button" id="sendBtn" onclick="addNewMessage()">Send Message</button>
+        </form>
+      </div>
+      <div class="col-6 col-careers" id="careers">
+        <div class="sns">
+              <span class="icon"><ion-icon name="logo-facebook"></ion-icon></span>
+              <label>https://www.facebook.com/chlead</label><br>
+              <span class="icon"><ion-icon name="logo-instagram"></ion-icon></span>
+              <label>@chleadphils</label><br>
+              <span class="icon"><ion-icon name="logo-tiktok"></ion-icon></span>
+              <label>@chleadphils</label>
+          </div>
+
+          <div class="career">
+            <h1>Careers</h1>
+            <p>you can reach us at <a href="#">hr@chlead.com</a></p>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="homepage.js"> </script>
+<script src="customerHome.js"> </script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
