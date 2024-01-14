@@ -36,7 +36,7 @@ function populateProduct(data) {
             console.log(value.productImage);
                       
             newDiv.innerHTML = `
-                <img src="ch-lead/frontend/Images/${value.productImage}">
+                <img src="/Images/${value.productImage}">
                 <div class="title">${value.productName}</div>
                 <div class="price"><span>₱</span><div class="product-amount" id="product-id${value._id}"> ${value.productAmount}</div></div> 
                 <button onclick="addToCart('${value._id}')" id="${value._id}" class="btnProduct" >Add to Cart</button>            
