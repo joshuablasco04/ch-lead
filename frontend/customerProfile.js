@@ -7,7 +7,7 @@ function fetchUser(){
     const headerName= document.getElementById('header-name')
     
 
-    fetch('http://ch-lead.onrender.com/users/loginUser')
+    fetch('https://ch-lead.onrender.com/users/loginUser')
     .then(res => res.json())
     .then(users => {
         users.user.forEach(user => {

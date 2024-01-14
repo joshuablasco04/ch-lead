@@ -45,7 +45,7 @@ function addNewMessage() {
     }
   }
 
-  fetch('http://ch-lead.onrender.com/inbox/addMessageInbox', {
+  fetch('https://ch-lead.onrender.com/inbox/addMessageInbox', {
     method: 'POST',
     headers: {
       'Content-type': 'application/json',

@@ -22,7 +22,7 @@ function populateCart(){
 
   listElement.innerHTML = "";
 
-    fetch('http://ch-lead.onrender.com/customers/getCart')
+    fetch('https://ch-lead.onrender.com/customers/getCart')
     .then(res => res.json())
     .then(data => {
         data.cart.find((value, key) => {
@@ -144,7 +144,7 @@ function add(key) {
   total.innerText = parseFloat(total.innerText) + parseFloat(itemAmount.innerText);
  
  
-  fetch(`http://ch-lead.onrender.com/customers/getCart/${key}`, {
+  fetch(`https://ch-lead.onrender.com/customers/getCart/${key}`, {
           method: 'PUT',
           headers: {
               'Content-type': 'application/json'
@@ -172,7 +172,7 @@ function minus(key) {
     itemTotalAmount.innerText = parseFloat(itemQuantity.innerText) * parseFloat(itemAmount.innerText);
     total.innerText = parseFloat(total.innerText) - parseFloat(itemAmount.innerText);
 
-    fetch(`http://ch-lead.onrender.com/customers/getCart/${key}`, {
+    fetch(`https://ch-lead.onrender.com/customers/getCart/${key}`, {
             method: 'DELETE',
             headers: {
                 'Content-type': 'application/json'
@@ -195,11 +195,11 @@ function minus(key) {
 function confirmCheckout() {
     const totalAmount = document.getElementById('total-value');
     
-    fetch('http://ch-lead.onrender.com/customers/getCart')
+    fetch('https://ch-lead.onrender.com/customers/getCart')
       .then((res) => res.json())
       .then((data) => {
          data.cart.map((product) => {
-          fetch('http://ch-lead.onrender.com/customers/addToHistory', {
+          fetch('https://ch-lead.onrender.com/customers/addToHistory', {
             method: 'POST',
             headers: {
               'Content-type': 'application/json'
