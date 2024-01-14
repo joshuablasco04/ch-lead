@@ -1,0 +1,25 @@
+
+body .table-accounts{
+    margin: 5%;
+}
+.table-container .table,h2{
+    text-align: center;
+}
+#tbody .image-name{
+    display: flex;
+    gap: 50px;
+}
+#tbody img{
+    width: 100px;
+    height: 100px;
+}
+
+h2{
+    background-color: var(--secondary-color-light);
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-radius: 8px;
+    border: 1px solid var(--white);
+}

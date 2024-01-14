@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">    
+    <script src="https://kit.fontawesome.com/780e24f53b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="customerProduct.css">
+    
+    <title>My Accounts</title></head>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <img src="Images/logo.webp" alt="" id="home" href="customerHome.html">
+                <a class="nav-logo" href="#">CHLEAD INDUSTRIAL SUPPLY</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="customerHome.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="customerProduct.html">Products</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                My Profile
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="customerProfile.html">Profile information</a></li>
+                                <li><a class="dropdown-item" href="customerAccounts.html">My accounts</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="customerHistory.html">Purchase history</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item" id="logout">
+                            <a class="nav-link" aria-current="page" href="index.html">Signout</a>
+                        </li> 
+                    </ul>
+    
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <h2>My Account</h2>
+
+    <div class="table-accounts">
+        <table class="table table-striped">
+            <thead>
+                <th>Order Number</th>
+                <th>Item</th>
+                <th>Amount</th>
+                <th>Status</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>0123</td>
+                    <td>Valves</td>
+                    <td>PHP 50,000.00</td>
+                    <td>For payment</td>    
+                </tr>      
+                <tr>
+                    <td>0456</td>
+                    <td>Pumps</td>
+                    <td>PHP 2,000,000.00</td>
+                    <td>For delivery</td>    
+                </tr>  
+                <tr>
+                    <td>0789</td>
+                    <td>Pressure Gauge</td>
+                    <td>PHP 12,000.00</td>
+                    <td>Delivered</td>    
+                </tr>  
+                    
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
