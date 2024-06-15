@@ -6,8 +6,8 @@ const cartQuantity = document.querySelector('.cart-quantity')
 const container = document.getElementById('products-container');
 const checkoutCard = document.querySelector('.checkoutCard')
 
-function fetchAllProducts() {
-    fetch('https://ch-lead.onrender.com/customers/getAllProducts')
+async function fetchAllProducts() {
+    await fetch('https://ch-lead.onrender.com/customers/getAllProducts')
         .then(res => res.json())
         .then(productData => {
             populateProduct(productData);
@@ -36,7 +36,7 @@ function populateProduct(data) {
             console.log(value.productImage);
                       
             newDiv.innerHTML = `
-                <img src="/Images/${value.productImage}">
+                <img src="/Images/${value.productImage}" alt="Loading img">
                 <div class="title">${value.productName}</div>
                 <div class="price"><span>₱</span><div class="product-amount" id="product-id${value._id}"> ${value.productAmount}</div></div> 
                 <button onclick="addToCart('${value._id}')" id="${value._id}" class="btnProduct" >Add to Cart</button>            
@@ -48,7 +48,7 @@ function populateProduct(data) {
             newDiv.className = 'productItem'; 
                        
             newDiv.innerHTML = `
-                <img src="/Images/${value.productImage}">
+                <img src="/Images/${value.productImage} " alt="Loading img">
                 <div class="title">${value.productName}</div>
                 <div class="price"><span>₱</span><div class="product-amount" id="product-id${value._id}"> ${value.productAmount}</div></div>              
                 <button onclick="addToCart('${value._id}')" id="${value._id}"  class="btnProduct" type="button">Add to Cart</button>            
@@ -60,7 +60,7 @@ function populateProduct(data) {
             newDiv.className = 'productItem'; 
                        
             newDiv.innerHTML = `
-                <img src="/Images/${value.productImage}">
+                <img src="/Images/${value.productImage}"  alt="Loading img">
                 <div class="title">${value.productName}</div>
                 <div class="price"><span>₱</span><div class="product-amount" id="product-id${value._id}"> ${value.productAmount}</div></div>            
                 <button onclick="addToCart('${value._id}')" id="${value._id}"  class="btnProduct" type="button">Add to Cart</button> 
@@ -72,7 +72,7 @@ function populateProduct(data) {
             newDiv.className = 'productItem';  
                       
             newDiv.innerHTML = `
-                <img src="/Images/${value.productImage}">
+                <img src="/Images/${value.productImage}"  alt="Loading img">
                 <div class="title">${value.productName}</div>
                 <div class="price"><span>₱</span><div class="product-amount" id="product-id${value._id}"> ${value.productAmount}</div></div>          
                 <button onclick="addToCart('${value._id}')" id="${value._id}"  class="btnProduct" type="button">Add to Cart</button>              
@@ -83,7 +83,7 @@ function populateProduct(data) {
             newDiv.className = 'productItem';    
                     
             newDiv.innerHTML = `
-                <img src="/Images/${value.productImage}">
+                <img src="/Images/${value.productImage}"  alt="Loading img">
                 <div class="title">${value.productName}</div>
                 <div class="price"><span>₱</span><div class="product-amount" id="product-id${value._id}"> ${value.productAmount}</div></div>              
                 <button onclick="addToCart('${value._id}')" id="${value._id}"  class="btnProduct" type="button">Add to Cart</button>            
