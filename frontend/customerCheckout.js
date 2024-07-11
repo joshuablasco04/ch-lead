@@ -31,7 +31,7 @@ function populateCart(){
                 newDiv2.className = `cartItem${value._id}`
                 newDiv2.id = `cartItem${value._id}`
                 newDiv2.innerHTML = `
-                    <img src="/Images/${value.productImage}">
+                    <img src="./Images/${value.productImage}">
                     <div class="item-name">${value.productName}</div>   
                         <div class="unit-price${value._id}" id="unit-price">
                             <span>₱</span>

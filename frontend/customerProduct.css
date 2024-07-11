@@ -72,6 +72,21 @@ body{
 .header-2{
     display: none;
 }
+.navbar-collapse ul li a{
+        color: #fff;
+    }
+    .navbar-collapse ul li a:hover{
+        color: #d71313;
+        scale: 1.01;
+    }
+    .navbar .navbar-nav li .dropdown-item {
+        color: var(--black);
+    }
+
+    .navbar .navbar-nav li .dropdown-item:hover {
+        color: var(--primary-color);
+        border-bottom: none;
+    }
 .burger-items{
     display: flex;
     margin-top: 20px;
@@ -349,6 +364,10 @@ body{
     color: var(--second-primary-color);
     cursor: pointer;
 }
+.productItem button{
+        background-color: #0b29ec;
+        color: #fff;
+    }
 }
 
 
@@ -374,6 +393,24 @@ body{
     .navbar-nav{
         /* color: #fff; */
         margin-left: 10%;
+    }
+    #popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        background-color: #232220;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        z-index: 1;
+        height: 200px;
+        width: 500px;
+        text-align: center;
+    }
+    #popup .fa-solid {
+        font-size: 100px;
     }
    
 

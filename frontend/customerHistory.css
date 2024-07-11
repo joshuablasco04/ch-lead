@@ -23,3 +23,11 @@ h2{
     border-radius: 8px;
     border: 1px solid var(--white);
 }
+nav .nav-item li .dropdown-item {
+        color: var(--black);
+    }
+
+    nav .nav-item li .dropdown-item:hover {
+        color: var(--primary-color);
+        border-bottom: none;
+    }

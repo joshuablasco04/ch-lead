@@ -34,9 +34,9 @@ function populateProduct(data) {
             let newDiv = document.createElement('div');
             newDiv.className = 'productItem'; 
             console.log(value.productImage);
-                      
+                                  
             newDiv.innerHTML = `
-                <img src="/Images/${value.productImage}" alt="Loading img">
+                <img src="./Images/${value.productImage}" alt="Loading img">
                 <div class="title">${value.productName}</div>
                 <div class="price"><span>₱</span><div class="product-amount" id="product-id${value._id}"> ${value.productAmount}</div></div> 
                 <button onclick="addToCart('${value._id}')" id="${value._id}" class="btnProduct" >Add to Cart</button>            
@@ -48,7 +48,7 @@ function populateProduct(data) {
             newDiv.className = 'productItem'; 
                        
             newDiv.innerHTML = `
-                <img src="/Images/${value.productImage} " alt="Loading img">
+                <img src="./Images/${value.productImage} " alt="Loading img">
                 <div class="title">${value.productName}</div>
                 <div class="price"><span>₱</span><div class="product-amount" id="product-id${value._id}"> ${value.productAmount}</div></div>              
                 <button onclick="addToCart('${value._id}')" id="${value._id}"  class="btnProduct" type="button">Add to Cart</button>            
@@ -60,7 +60,7 @@ function populateProduct(data) {
             newDiv.className = 'productItem'; 
                        
             newDiv.innerHTML = `
-                <img src="/Images/${value.productImage}"  alt="Loading img">
+                <img src="./Images/${value.productImage}"  alt="Loading img">
                 <div class="title">${value.productName}</div>
                 <div class="price"><span>₱</span><div class="product-amount" id="product-id${value._id}"> ${value.productAmount}</div></div>            
                 <button onclick="addToCart('${value._id}')" id="${value._id}"  class="btnProduct" type="button">Add to Cart</button> 
@@ -72,7 +72,7 @@ function populateProduct(data) {
             newDiv.className = 'productItem';  
                       
             newDiv.innerHTML = `
-                <img src="/Images/${value.productImage}"  alt="Loading img">
+                <img src="./Images/${value.productImage}"  alt="Loading img">
                 <div class="title">${value.productName}</div>
                 <div class="price"><span>₱</span><div class="product-amount" id="product-id${value._id}"> ${value.productAmount}</div></div>          
                 <button onclick="addToCart('${value._id}')" id="${value._id}"  class="btnProduct" type="button">Add to Cart</button>              
@@ -83,7 +83,7 @@ function populateProduct(data) {
             newDiv.className = 'productItem';    
                     
             newDiv.innerHTML = `
-                <img src="/Images/${value.productImage}"  alt="Loading img">
+                <img src="./Images/${value.productImage}"  alt="Loading img">
                 <div class="title">${value.productName}</div>
                 <div class="price"><span>₱</span><div class="product-amount" id="product-id${value._id}"> ${value.productAmount}</div></div>              
                 <button onclick="addToCart('${value._id}')" id="${value._id}"  class="btnProduct" type="button">Add to Cart</button>            
@@ -108,7 +108,7 @@ function populateCart(){
                 newDiv2.className = `'cartItem${value._id}'`
                 newDiv2.id = `'cartItem${value._id}'`
                 newDiv2.innerHTML = `
-                    <img src="/Images/${value.productImage}">
+                    <img src="./Images/${value.productImage}">
                     <div>${value.productName}</div>                    
                         <span>₱</span>
                         <div id="amount${value._id}"> ${value.productAmount}
