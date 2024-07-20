@@ -368,6 +368,24 @@ body{
         background-color: #0b29ec;
         color: #fff;
     }
+    #popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        background-color: #232220;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        z-index: 1;
+        height: 200px;
+        width: 500px;
+        text-align: center;
+    }
+    #popup .fa-solid {
+        font-size: 100px;
+    }
 }
 
 
